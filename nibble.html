@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nibble - Personal Video Communication App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Roboto Mono', monospace;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 text-sm md:text-base">
+  <div class="min-h-screen flex">
+    <!-- Navigation -->
+    <nav class="w-48 p-6 flex flex-col space-y-4">
+      <a href="index.html" class="text-base font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-400">Jess</a>
+      <a href="about.html" class="text-base font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-400">About</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6 space-y-12 overflow-y-auto">
+
+      <!-- Hero Section -->
+      <section class="relative overflow-hidden rounded-lg group">
+        <img src="nibble_header.png" alt="Hero mockup for Nibble" class="w-full h-56 md:h-80 object-cover transition-transform duration-300 group-hover:scale-105" />
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-6 md:p-8 space-y-2">
+          <h1 class="text-[#FFA600] text-3xl md:text-4xl font-semibold">Nibble</h1>
+          <p class="text-white text-base md:text-lg max-w-3xl">
+            Built and launched Nibble, a private video-sharing app for close relationships. Validated the concept through 30+ user tests and a live product demo to 40+ iOS developers in Taipei.
+          </p>
+          <div class="text-white text-xs md:text-sm">Independent Product Project</div>
+          <div class="text-white text-xs md:text-sm">My Role: Product Management, Product Design, AI Prototyping, iOS App Development</div>
+          <div class="text-white text-xs md:text-sm">Stage: TestFlight MVP</div>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="px-2 py-1 border border-white text-white rounded-full text-xs">Private Social</span>
+            <span class="px-2 py-1 border border-white text-white rounded-full text-xs">Video Communication</span>
+            <span class="px-2 py-1 border border-white text-white rounded-full text-xs">iOS MVP</span>
+            <span class="px-2 py-1 border border-white text-white rounded-full text-xs">AI-Assisted Prototyping</span>
+            <span class="px-2 py-1 border border-white text-white rounded-full text-xs">User Research</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Overview -->
+      <section class="max-w-4xl space-y-4">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#FFA600]">Overview</h2>
+        <p class="leading-relaxed">
+          Nibble is a lightweight social communication app designed for close relationships: family, partners, and close friends. Unlike traditional social media platforms optimized for broadcasting and performance, Nibble focuses on intimate, low-pressure communication through short video moments.
+        </p>
+        <p class="leading-relaxed">
+          I independently led the product vision, user research, product strategy, UI/UX design, AI-assisted prototyping, and user testing. The product is currently in TestFlight MVP stage.
+        </p>
+      </section>
+
+      <!-- Problem -->
+      <section id="problem" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#FFA600]">Problem</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-4">
+            <p class="leading-relaxed">
+              Existing communication platforms create two opposite problems: social platforms like Instagram encourage performative sharing and social comparison, while messaging apps like LINE feel utility-heavy, cluttered, and emotionally cold.
+            </p>
+            <p class="leading-relaxed">
+              For people in long-distance relationships, especially students moving abroad, families living apart, or busy friends, staying emotionally connected often becomes difficult despite constant communication tools.
+            </p>
+            <h3 class="font-semibold mt-4 text-[#FFA600]">How might we…</h3>
+            <p class="italic text-[#FA781E] text-base md:text-lg">
+              Design a communication experience that feels emotionally warm, lightweight, and personal, without the pressure of traditional social media?
+            </p>
+          </div>
+          <div class="rounded-lg bg-gray-50 p-5">
+            <h3 class="font-semibold text-[#FFA600]">Users frequently…</h3>
+            <ul class="mt-4 list-disc list-inside space-y-2">
+              <li>hesitate to send small moments</li>
+              <li>overthink how they appear online</li>
+              <li>default to passive scrolling instead of meaningful interaction</li>
+              <li>feel disconnected even while messaging daily</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Goals -->
+      <section id="goals" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#FFA600]">Goal</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="rounded-lg bg-[#FFF7E6] p-5 space-y-3">
+            <h3 class="font-semibold text-[#FFA600]">Product Goals</h3>
+            <ul class="list-disc list-inside space-y-2">
+              <li>Create a low-pressure communication tool for close relationships.</li>
+              <li>Encourage users to share authentic everyday moments.</li>
+              <li>Make asynchronous video communication feel emotionally intimate.</li>
+              <li>Reduce friction between recording, sharing, and responding.</li>
+            </ul>
+          </div>
+          <div class="rounded-lg bg-[#FFF7E6] p-5 space-y-3">
+            <h3 class="font-semibold text-[#FFA600]">Strategic Questions</h3>
+            <ul class="list-disc list-inside space-y-2">
+              <li>Can emotionally driven micro-interactions increase engagement?</li>
+              <li>How does private social behavior differ from public social media behavior?</li>
+              <li>Can AI-assisted workflows help a solo PM/designer prototype and validate faster?</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- User Research -->
+      <section id="research" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#FFA600]">User Research</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-4">
+            <p class="leading-relaxed">
+              My initial insights came from preparing to move abroad for graduate school and wanting a better way to stay emotionally connected with family and friends in Taiwan. I then conducted lightweight qualitative research through conversations, product observation, peer concept tests, and analysis of emotional friction in existing communication flows.
+            </p>
+            <p class="leading-relaxed">
+              To validate the idea beyond my own assumptions, I conducted user testing with 30+ participants and presented Nibble at a Taipei iOS developer meetup attended by 40+ developers and builders.
+            </p>
+            <p class="leading-relaxed">
+              The feedback helped identify onboarding friction, refine feature priorities, and validate demand for a more personal, low-pressure way to stay connected through video.
+            </p>
+            <p class="text-base md:text-lg font-semibold text-[#FA781E]">
+              People often record meaningful moments but never send them because sharing feels too serious or performative.
+            </p>
+          </div>
+          <div class="space-y-3">
+            <h3 class="font-semibold text-[#FFA600]">Key Findings</h3>
+            <ul class="list-disc list-inside space-y-2">
+              <li>Users wanted to share small moments without needing them to feel polished.</li>
+              <li>Existing platforms felt either too public or too transactional.</li>
+              <li>Video felt emotionally richer than text, but current flows required too much effort.</li>
+              <li>Users enjoyed casual, imperfect videos from close friends more than curated content.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Market & Competitive Analysis -->
+      <section id="competitive" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#FFA600]">Market &amp; Competitive Analysis</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full min-w-[640px] text-left text-xs md:text-sm">
+            <thead>
+              <tr class="border-b border-gray-200">
+                <th class="py-2 pr-4 font-medium">Platform</th>
+                <th class="py-2 px-4 font-medium">Strength</th>
+                <th class="py-2 pl-4 font-medium">Weakness</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100">
+              <tr>
+                <td class="py-3 pr-4 font-medium">Instagram</td>
+                <td class="py-3 px-4">High-quality sharing and discovery</td>
+                <td class="py-3 pl-4">Performative and socially stressful</td>
+              </tr>
+              <tr>
+                <td class="py-3 pr-4 font-medium">LINE</td>
+                <td class="py-3 px-4">Reliable communication</td>
+                <td class="py-3 pl-4">Emotionally cold and feature-heavy</td>
+              </tr>
+              <tr>
+                <td class="py-3 pr-4 font-medium">BeReal</td>
+                <td class="py-3 px-4">Authenticity-focused</td>
+                <td class="py-3 pl-4">Still semi-public and trend-driven</td>
+              </tr>
+              <tr>
+                <td class="py-3 pr-4 font-medium">Snapchat</td>
+                <td class="py-3 px-4">Fast casual sharing</td>
+                <td class="py-3 pl-4">Chaotic UI and less emotionally intentional</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rounded-lg bg-gray-50 p-5">
+          <p class="leading-relaxed">
+            Nibble positions itself as <span class="font-semibold text-[#FA781E]">a private emotional communication layer between messaging apps and social media</span>: close-friend-first, emotionally warm, lightweight, asynchronous, and free from public engagement metrics.
+          </p>
+        </div>
+      </section>
+
+      <!-- UI/UX Design -->
+      <section id="design" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#FFA600]">UI/UX Design</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div class="rounded-lg bg-[#FFF7E6] p-5 space-y-3">
+            <h3 class="font-semibold text-[#FFA600]">Interaction Direction</h3>
+            <ul class="list-disc list-inside space-y-2">
+              <li>Prioritized recording and replay as primary actions.</li>
+              <li>Simplified hierarchy to reduce decision fatigue.</li>
+              <li>Removed public-facing social metrics.</li>
+            </ul>
+          </div>
+          <div class="rounded-lg bg-[#FFF7E6] p-5 space-y-3">
+            <h3 class="font-semibold text-[#FFA600]">Emotional Design</h3>
+            <ul class="list-disc list-inside space-y-2">
+              <li>Designed reactions and comments to feel lightweight.</li>
+              <li>Explored mailbox and letter metaphors.</li>
+              <li>Focused on calm, soft interaction patterns.</li>
+            </ul>
+          </div>
+          <div class="rounded-lg bg-[#FFF7E6] p-5 space-y-3">
+            <h3 class="font-semibold text-[#FFA600]">Visual Identity</h3>
+            <p class="leading-relaxed">
+              Nibble uses minimalist black-and-white illustrated mascots, Ugly Cat &amp; Bunny, to create recognizable emotional branding, lower social pressure, and an approachable indie-product personality.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Solution -->
+      <section id="solution" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#FFA600]">Solution</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+          <div class="space-y-4">
+            <p class="leading-relaxed">
+              I designed and built the iOS MVP, end-to-end user flow, interaction architecture, UI system, onboarding concepts, social interaction patterns, and emotional reaction mechanics.
+            </p>
+            <h3 class="font-semibold text-[#FFA600]">Current MVP Flow</h3>
+            <ol class="list-decimal list-inside space-y-2">
+              <li>Record a short video.</li>
+              <li>Replay before sending.</li>
+              <li>Send to friends or groups.</li>
+              <li>Recipients react with emojis or comments.</li>
+              <li>Conversations continue through lightweight threaded chat.</li>
+            </ol>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="rounded-lg bg-gray-50 p-4">
+              <h3 class="font-semibold text-[#FFA600]">Core Features</h3>
+              <ul class="mt-3 list-disc list-inside space-y-2">
+                <li>video-first communication</li>
+                <li>asynchronous interaction</li>
+                <li>lightweight reactions</li>
+                <li>friend/group sharing</li>
+              </ul>
+            </div>
+            <div class="rounded-lg bg-gray-50 p-4">
+              <h3 class="font-semibold text-[#FFA600]">Product System</h3>
+              <ul class="mt-3 list-disc list-inside space-y-2">
+                <li>emotionally focused UI</li>
+                <li>AI-assisted workflow</li>
+                <li>interaction prototypes</li>
+                <li>TestFlight MVP</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AI-Assisted Development -->
+      <section id="ai-workflow" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#FFA600]">AI-Assisted Development Workflow</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div class="rounded-lg bg-[#FFF7E6] p-5">
+            <h3 class="font-semibold text-[#FFA600]">Prototype</h3>
+            <p class="mt-3 leading-relaxed">Rapidly explored product ideas and interaction patterns using AI-assisted tools.</p>
+          </div>
+          <div class="rounded-lg bg-[#FFF7E6] p-5">
+            <h3 class="font-semibold text-[#FFA600]">Generate</h3>
+            <p class="mt-3 leading-relaxed">Used iterative UI generation to test layout and visual directions faster.</p>
+          </div>
+          <div class="rounded-lg bg-[#FFF7E6] p-5">
+            <h3 class="font-semibold text-[#FFA600]">Validate</h3>
+            <p class="mt-3 leading-relaxed">Moved from concepts to clickable and functional MVP states for early feedback.</p>
+          </div>
+          <div class="rounded-lg bg-[#FFF7E6] p-5">
+            <h3 class="font-semibold text-[#FFA600]">Build</h3>
+            <p class="mt-3 leading-relaxed">Accelerated development without a full engineering team while preserving product judgment.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Impact -->
+      <section id="impact" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#FFA600]">Impact &amp; Results</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-4">
+            <h3 class="font-semibold text-[#FFA600]">Product Outcomes</h3>
+            <ul class="list-disc list-inside space-y-2">
+              <li>Built and launched a functional MVP on TestFlight.</li>
+              <li>Conducted user testing with 30+ participants.</li>
+              <li>Presented the product to 40+ iOS developers and product builders.</li>
+              <li>Gathered qualitative feedback to iterate on onboarding, sharing flows, and user engagement.</li>
+              <li>Validated demand for a more personal and emotionally connected communication experience.</li>
+            </ul>
+          </div>
+          <div class="space-y-4">
+            <h3 class="font-semibold text-[#FFA600]">PM Outcomes</h3>
+            <ul class="list-disc list-inside space-y-2">
+              <li>Translated emotional insights into product strategy.</li>
+              <li>Prioritized MVP scope under time constraints.</li>
+              <li>Iterated rapidly through user feedback.</li>
+              <li>Used AI tools as PM leverage rather than replacement.</li>
+            </ul>
+          </div>
+        </div>
+        <p class="max-w-4xl leading-relaxed">
+          One of the strongest validation signals was that users described the app as feeling <span class="font-semibold text-[#FA781E]">warmer</span> and <span class="font-semibold text-[#FA781E]">more personal</span> than existing communication platforms.
+        </p>
+      </section>
+
+      <!-- Key Learnings -->
+      <section id="learnings" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#FFA600]">Key Learnings</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="rounded-lg bg-gray-50 p-5 space-y-3">
+            <h3 class="font-semibold text-[#FFA600]">1. Distribution matters as much as product quality</h3>
+            <p class="leading-relaxed">Great products do not naturally gain users. This made me more interested in distribution strategy, shareability loops, emotional virality, creator-style product marketing, and indie app growth mechanics.</p>
+          </div>
+          <div class="rounded-lg bg-gray-50 p-5 space-y-3">
+            <h3 class="font-semibold text-[#FFA600]">2. Emotional products require emotional onboarding</h3>
+            <p class="leading-relaxed">Users needed stronger context to understand why Nibble exists, who it is for, and how it differs from traditional messaging apps.</p>
+          </div>
+          <div class="rounded-lg bg-gray-50 p-5 space-y-3">
+            <h3 class="font-semibold text-[#FFA600]">3. Simplicity is harder than adding features</h3>
+            <p class="leading-relaxed">I repeatedly reduced UI complexity, unnecessary actions, feature creep, and interaction overload to preserve focus and emotional clarity.</p>
+          </div>
+          <div class="rounded-lg bg-gray-50 p-5 space-y-3">
+            <h3 class="font-semibold text-[#FFA600]">4. AI changes product iteration speed</h3>
+            <p class="leading-relaxed">AI-assisted workflows lowered execution barriers, but strong product judgment became even more important. AI can accelerate execution, but not product taste or strategic thinking.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Artifacts -->
+      <section id="artifacts" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#FFA600]">Product Artifacts</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <ul class="rounded-lg bg-[#FFF7E6] p-5 list-disc list-inside space-y-2">
+            <li>Product concept documentation</li>
+            <li>User flow diagrams</li>
+            <li>MVP feature prioritization</li>
+            <li>Wireframes</li>
+          </ul>
+          <ul class="rounded-lg bg-[#FFF7E6] p-5 list-disc list-inside space-y-2">
+            <li>UI iterations</li>
+            <li>Design system exploration</li>
+            <li>TestFlight MVP</li>
+            <li>Brand mascot system</li>
+          </ul>
+          <ul class="rounded-lg bg-[#FFF7E6] p-5 list-disc list-inside space-y-2">
+            <li>Interaction prototypes</li>
+            <li>User journey maps</li>
+            <li>Product decision tradeoffs</li>
+            <li>AI-assisted workflow examples</li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>

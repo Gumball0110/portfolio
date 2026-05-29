@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PictureCook – Acer PM Case Study</title>
+    <!-- Import Roboto Mono from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Ensure the whole site uses the imported monospace font */
+      body {
+        font-family: 'Roboto Mono', monospace;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800 text-sm md:text-base">
+    <div class="flex min-h-screen">
+      <nav class="w-48 p-6 flex flex-col space-y-4">
+        <a href="index.html" class="text-base font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-400">Jess</a>
+        <a href="about.html" class="text-base font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-400">About</a>
+      </nav>
+      <main class="flex-1 max-w-5xl mx-auto px-4 py-10 space-y-16">
+      <!-- Hero Section -->
+      <section class="relative overflow-hidden rounded-lg group">
+        <img src="picturecook-hero.png" alt="Hero collage for PictureCook" class="w-full h-56 md:h-80 object-cover transition-transform duration-300 group-hover:scale-105" />
+        <div class="absolute inset-0 bg-black/35"></div>
+        <div class="absolute inset-0 flex flex-col justify-end p-6 md:p-8 space-y-2">
+          <h1 class="text-[#FFE3ED] text-3xl md:text-4xl font-semibold">PictureCook</h1>
+          <p class="text-white text-base md:text-lg max-w-3xl">
+            A children’s AI companion product that combines daily storytelling,
+            expressive replies, and open-ended pretend play to build language
+            confidence, creativity, and emotional connection.
+          </p>
+          <div class="text-white text-xs md:text-sm space-x-2">
+            <span>Aug&nbsp;2025&nbsp;–&nbsp;Dec&nbsp;2025</span>
+          </div>
+          <div class="text-white text-xs md:text-sm">My Role: Product Manager</div>
+          <div class="text-white text-xs md:text-sm">
+            Focus: Product strategy, AI feature design, Data analysis, Quality Assurance
+          </div>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="px-2 py-1 border border-white text-white rounded-full text-xs">Roadmap</span>
+            <span class="px-2 py-1 border border-white text-white rounded-full text-xs">AI Companion</span>
+            <span class="px-2 py-1 border border-white text-white rounded-full text-xs">EdTech</span>
+            <span class="px-2 py-1 border border-white text-white rounded-full text-xs">Data-driven Design</span>
+            <span class="px-2 py-1 border border-white text-white rounded-full text-xs">Product Growth</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Impact Metrics Summary -->
+      <section>
+        <h2 class="text-xl md:text-2xl font-semibold text-[#AC0033] mb-4 border-b border-gray-200 pb-2">
+          Impact at a Glance
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Metric Card -->
+          <div class="rounded-lg p-4 bg-[#FFF4F8]">
+            <p class="text-2xl font-bold text-[#FE6593]">3,000+</p>
+            <p class="text-sm text-[#AC0033]/80 uppercase tracking-wide">
+              Registered child users
+            </p>
+          </div>
+          <div class="rounded-lg p-4 bg-[#FFF4F8]">
+            <p class="text-2xl font-bold text-[#FE6593]">↑&nbsp;50%</p>
+            <p class="text-sm text-[#AC0033]/80 uppercase tracking-wide">
+              WAU increase week over week
+            </p>
+          </div>
+          <div class="rounded-lg p-4 bg-[#FFF4F8]">
+            <p class="text-2xl font-bold text-[#FE6593]">18%</p>
+            <p class="text-sm text-[#AC0033]/80 uppercase tracking-wide">
+              Day‑7 retention (2.5× industry)
+            </p>
+          </div>
+          <div class="rounded-lg p-4 bg-[#FFF4F8]">
+            <p class="text-2xl font-bold text-[#FE6593]">&gt;3&nbsp;hrs</p>
+            <p class="text-sm text-[#AC0033]/80 uppercase tracking-wide">
+              Weekly time spent per child
+            </p>
+          </div>
+          <div class="rounded-lg p-4 bg-[#FFF4F8]">
+            <p class="text-2xl font-bold text-[#FE6593]">2×</p>
+            <p class="text-sm text-[#AC0033]/80 uppercase tracking-wide">
+              Subscription growth after first AI feature
+            </p>
+          </div>
+          <div class="rounded-lg p-4 bg-[#FFF4F8]">
+            <p class="text-2xl font-bold text-[#FE6593]">US$100K</p>
+            <p class="text-sm text-[#AC0033]/80 uppercase tracking-wide">
+              Early‑stage investment raised
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Problem & Insights -->
+      <section class="space-y-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#AC0033] border-b border-gray-200 pb-2">
+          Problem &amp; Insights
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+          <div class="space-y-4">
+            <h3 class="text-lg font-medium text-[#FE6593]">Motivation</h3>
+            <p class="leading-relaxed">
+              Over 700&nbsp;million children in Asia experience test-driven English education, where they memorise for exams but rarely speak. Research shows that having just one close friend to talk to makes children roughly <span class="font-semibold text-[#FE6593]">1.6× more likely</span> to progress in language learning.
+            </p>
+            <p class="leading-relaxed">
+              This led to the core opportunity: instead of making another lesson product, PictureCook could turn AI into a warm companion that children want to talk with every day.
+            </p>
+          </div>
+          <div class="space-y-4">
+            <h3 class="text-lg font-medium text-[#FE6593]">Ideation: Tom’s Diary</h3>
+            <p class="leading-relaxed">
+              Every day, Tom the Tomato sends a postcard to the child, sharing an animated moment from his day and asking a question to encourage the child to share theirs. Children reply using voice recordings, photos, or drawings, and Tom responds again through AI.
+            </p>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <div class="space-y-4">
+            <h3 class="text-lg font-medium text-[#FE6593]">Early Experiment</h3>
+            <p class="max-w-4xl leading-relaxed">
+              To validate emotional engagement before building the full AI feature, I partnered with a kindergarten in New&nbsp;Taipei City for a four-week physical postcard pilot.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-3 text-center items-stretch">
+            <div class="flex min-h-28 items-center justify-center rounded-lg bg-[#FFF4F8] px-5 py-4">
+              <p class="font-medium">We mailed illustrated story postcards every day</p>
+            </div>
+            <div class="flex items-center justify-center text-xl text-[#FE6593]" aria-hidden="true">
+              <span class="hidden md:inline">➡️</span>
+              <span class="md:hidden">⬇️</span>
+            </div>
+            <div class="flex min-h-28 items-center justify-center rounded-lg bg-[#FFF4F8] px-5 py-4">
+              <p class="font-medium">Children replied with drawings and writings</p>
+            </div>
+            <div class="flex items-center justify-center text-xl text-[#FE6593]" aria-hidden="true">
+              <span class="hidden md:inline">➡️</span>
+              <span class="md:hidden">⬇️</span>
+            </div>
+            <div class="flex min-h-28 items-center justify-center rounded-lg bg-[#FFF4F8] px-5 py-4">
+              <p class="font-medium">We mailed back personalized “Tom replies”</p>
+            </div>
+          </div>
+          <p class="max-w-4xl leading-relaxed">
+            Children’s deep engagement and eagerness to keep sharing after receiving Tom’s return postcards confirmed that <span class="font-semibold text-[#FE6593]">daily story sharing</span> plus <span class="font-semibold text-[#FE6593]">timely feedback</span> can significantly boost motivation, creativity, and willingness to express themselves.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 items-start">
+            <img src="picturecook-experiment-1.jpg" alt="Child response from PictureCook postcard experiment" class="w-full max-w-[180px] md:max-w-[210px] mx-auto rounded-lg shadow-md rotate-[-1deg]" />
+            <img src="picturecook-experiment-2.jpg" alt="Handwritten child response from PictureCook postcard experiment" class="w-full max-w-[180px] md:max-w-[210px] mx-auto rounded-lg shadow-md rotate-[1deg]" />
+            <img src="picturecook-experiment-3.jpg" alt="Child drawing response from PictureCook postcard experiment" class="w-full max-w-[180px] md:max-w-[210px] mx-auto rounded-lg shadow-md rotate-[-1deg]" />
+          </div>
+          <div class="space-y-2">
+            <h3 class="font-semibold text-[#FE6593]">How might we…</h3>
+            <p class="italic text-[#FE6593] text-base md:text-lg">
+              Turn an AI companion into a friend, not another lesson?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Strategy -->
+      <section class="space-y-4">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#AC0033] border-b border-gray-200 pb-2">
+          Product Strategy
+        </h2>
+        <div class="space-y-6">
+          <div class="space-y-2">
+            <h3 class="text-lg font-medium text-[#FE6593]">Tom’s Diary – AI Companion</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>
+                <strong>Daily postcards as conversations:</strong> our mascot
+                Tom sends an animated postcard each day asking an open
+                question. Children reply through voice recordings, photos or
+                drawings and receive a personalised AI response.
+              </li>
+              <li>
+                <strong>Friendly, intuitive design:</strong> early user tests
+                showed that too much information distracts children, so I
+                created a diary‑style interface where only one page stays
+                active at a time. Familiar icons and large buttons reduce
+                cognitive load and encourage expressive replies.
+              </li>
+              <li>
+                <strong>Iterative improvement through data:</strong> after
+                launch, I monitored BigQuery and Google Analytics metrics
+                weekly. Insights led to clearer tutorials, a reduced action
+                zone and optimised AI prompts, resulting in higher completion
+                rates and engagement.
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-2">
+            <h3 class="text-lg font-medium text-[#FE6593]">Tom’s Home – Open‑Ended Play</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>
+                <strong>Real‑time AI chat anywhere:</strong> children can talk
+                with Tom wherever they are in the house, blurring the
+                boundary between play and conversation.
+              </li>
+              <li>
+                <strong>Horizontally scrollable space:</strong> to give kids
+                freedom to arrange furniture without clutter, rooms are
+                shallow and horizontally scrollable. This encourages
+                exploration instead of completing tasks.
+              </li>
+              <li>
+                <strong>Movable objects &amp; furniture:</strong> every item can
+                be dragged, placed and animated. This free‑form interaction
+                invites curiosity and fosters creativity and confidence.
+              </li>
+            </ul>
+            <img src="picturecook_homeflow.png" alt="PictureCook Tom’s Home open-ended play flow" class="w-full h-auto rounded-lg" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Data-Driven Product Iteration -->
+      <section class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#AC0033] border-b border-gray-200 pb-2">
+          Data-Driven Product Iteration
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="rounded-lg bg-[#FFF4F8] p-5 space-y-3">
+            <h3 class="text-lg font-medium text-[#FE6593]">Hypothesis</h3>
+            <p class="leading-relaxed">
+              Our initial product direction emphasized rich animations and multiple interactive elements on each screen.
+            </p>
+          </div>
+          <div class="rounded-lg bg-[#FFF4F8] p-5 space-y-3">
+            <h3 class="text-lg font-medium text-[#FE6593]">Analysis</h3>
+            <p class="leading-relaxed">
+              To validate user behavior, I defined 32 key behavioral data points and used AI-assisted SQL analysis in BigQuery to identify engagement patterns.
+            </p>
+          </div>
+          <div class="rounded-lg bg-[#FFF4F8] p-5 space-y-3">
+            <h3 class="text-lg font-medium text-[#FE6593]">Insights</h3>
+            <p class="leading-relaxed">
+              The data revealed that children engaged more effectively when each page focused on one clear interaction rather than multiple competing elements.
+            </p>
+          </div>
+          <div class="rounded-lg bg-[#FFF4F8] p-5 space-y-3">
+            <h3 class="text-lg font-medium text-[#FE6593]">Impact</h3>
+            <p class="leading-relaxed">
+              This insight led to a product-wide design shift toward single-action experiences, resulting in <span class="font-semibold text-[#FE6593]">3.5× higher engagement</span>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Metrics -->
+      <section class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#AC0033] border-b border-gray-200 pb-2">
+          AI-Assisted Product Analytics
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+          <div class="space-y-4 leading-relaxed">
+            <p>
+              To move faster as a lean product team, I used AI tools to help generate and refine BigQuery SQL queries for behavioral analysis.
+            </p>
+            <p>
+              Within 4 weeks, PictureCook reached 3,000+ registered child
+              users, with weekly active users growing 50% week over week.
+              Engagement signals showed strong product resonance:
+              <span class="text-base md:text-lg font-semibold text-[#FE6593]">Day-7 retention reached 18%</span>
+              (<span class="text-base md:text-lg font-semibold text-[#FE6593]">2.5 times</span>
+              the typical benchmark for children’s learning apps), and children
+              spent
+              <span class="text-base md:text-lg font-semibold text-[#FE6593]">3+ hours per week</span>
+              interacting with the AI companion.
+            </p>
+            <p>
+              After introducing the first AI feature, subscription growth doubled, validating the link between emotional engagement and business value.
+            </p>
+          </div>
+          <div class="space-y-5">
+            <div class="space-y-2 max-w-xs mx-auto">
+              <div class="rounded-lg overflow-hidden bg-white">
+                <img src="picturecook-metrics-bigquery.jpg" alt="PictureCook BigQuery analytics workflow" class="w-full h-auto rounded" />
+              </div>
+            </div>
+            <div class="space-y-2 max-w-xs mx-auto">
+              <div class="rounded-lg overflow-hidden bg-white">
+                <img src="picturecook-metrics-ga.png" alt="PictureCook Google Analytics metrics workflow" class="w-full h-auto rounded" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Roadmap & Growth -->
+      <section class="space-y-4">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#AC0033] border-b border-gray-200 pb-2">
+          Roadmap &amp; Growth
+        </h2>
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-medium text-[#FE6593]">Milestone 1 – Market Entry &amp; Early Validation (Q4&nbsp;2025)</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Raised US$100K in seed funding.</li>
+              <li>Launched the first AI feature (Tom’s Diary).</li>
+              <li>Subscriptions doubled after launch.</li>
+              <li>
+                Focused on Taiwan 🇹🇼, Japan 🇯🇵 and South Korea 🇰🇷, enabling children to
+                learn English through interactive storybooks and a co‑learning
+                AI buddy.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-medium text-[#FE6593]">Milestone 2 – Expansion &amp; Monetization Strategy (Q1&nbsp;2026)</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>
+                Expanded to the U.S. 🇺🇸 market, shifting the focus from
+                English‑learning to gamified experiences and AI companionship.
+              </li>
+              <li>
+                Introduced a rewarding system featuring streaks, achievements,
+                and progression mechanics to reinforce daily usage habits and
+                improve long-term engagement.
+              </li>
+              <li>
+                Launched a parental dashboard that enabled parents to track
+                learning progress, monitor activity, and celebrate milestones,
+                increasing accountability, family participation, and
+                subscription retention.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-medium text-[#FE6593]">Product Market Fit &amp; Inclusive Design (Q2&nbsp;2026)</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>
+                Stabilised product‑market fit and revenue in the U.S. 🇺🇸 market.
+              </li>
+              <li>
+                Personalised content using in‑app level test results and
+                expanded ADHD‑informed design for inclusive experiences.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Impact & Learnings -->
+      <section class="space-y-4 pb-10">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#AC0033] border-b border-gray-200 pb-2">
+          Outcomes &amp; Learnings
+        </h2>
+        <p class="leading-relaxed">
+          The product’s early performance confirmed that children were not just
+          trying PictureCook once, but building an ongoing relationship with
+          the AI companion. More importantly, the project showed that strong
+          outcomes came from a disciplined product process: starting from real
+          user and business problems, validating assumptions through small
+          pilots, designing for focus and emotional resonance, and iterating
+          continuously with data.
+        </p>
+        <p class="leading-relaxed">
+          Through this work, I learned that emotional engagement and agency can
+          be more powerful than gamification alone in driving retention. I also
+          learned that successful AI products for children require a careful
+          balance of qualitative insight, measurable product signals, and
+          execution choices that remain simple, trustworthy, and scalable.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start pt-2">
+          <img src="picturecook_outcome_1.png" alt="PictureCook outcome screen 1" class="w-full h-auto rounded-lg" />
+          <img src="picturecook_outcome_2.png" alt="PictureCook outcome screen 2" class="w-full h-auto rounded-lg" />
+        </div>
+      </section>
+      </main>
+    </div>
+  </body>
+</html>
