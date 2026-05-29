@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chewverse – AI Dining Companion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Roboto Mono', monospace;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 text-sm md:text-base">
+  <div class="min-h-screen flex">
+    <!-- Navigation -->
+    <nav class="w-48 p-6 flex flex-col space-y-4">
+      <a href="index.html" class="text-base font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-400">Jess</a>
+      <a href="about.html" class="text-base font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-400">About</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6 space-y-12 overflow-y-auto">
+
+      <!-- Hero Section -->
+      <section class="relative overflow-hidden rounded-lg group">
+        <img src="chewverse-hero.png" alt="Hero collage for Chewverse" class="w-full h-56 md:h-80 object-cover transition-transform duration-300 group-hover:scale-105" />
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-6 md:p-8 space-y-2">
+          <h1 class="text-[#FFA600] text-3xl md:text-4xl font-semibold">Chewverse</h1>
+          <p class="text-white text-base md:text-lg">An AI dining companion concept designed to make short solo meals feel lighter, more personal, and emotionally engaging.</p>
+          <div class="text-white text-xs md:text-sm space-x-2">
+            <span>Feb&nbsp;2025 – Jun&nbsp;2025</span>
+          </div>
+          <div class="text-white text-xs md:text-sm">My Role: Project Manager, UX Researcher, Product Designer</div>
+          <div class="text-white text-xs md:text-sm">Collaboration: Chao‑Wei Wang (Programmer), Chien‑Wen Chen (Programmer), Kuang‑Yu Sun (Programmer)</div>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="px-2 py-1 border border-white text-white rounded-full text-xs">AI Companion</span>
+            <span class="px-2 py-1 border border-white text-white rounded-full text-xs">Consumer Product</span>
+            <span class="px-2 py-1 border border-white text-white rounded-full text-xs">User Research</span>
+            <span class="px-2 py-1 border border-white text-white rounded-full text-xs">MVP Strategy</span>
+            <span class="px-2 py-1 border border-white text-white rounded-full text-xs">Emotional Wellbeing</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Summary -->
+      <section class="max-w-3xl space-y-4">
+        <p class="leading-relaxed">
+          Chewverse explores how generative AI can deliver lightweight companionship during the 15–20&nbsp;minute meal breaks common in modern life. It responds to the loneliness many solo diners feel by providing quick, emotionally attuned conversations instead of yet another feed to scroll through. This case study shows how I approached user research, opportunity framing, MVP definition and iteration—and why the concept has business potential beyond a student project.
+        </p>
+      </section>
+
+      <a
+        href="https://youtu.be/j6O6eHJ2jew"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group relative block aspect-video w-full max-w-3xl overflow-hidden rounded-lg border border-gray-200"
+        aria-label="Watch the Chewverse video on YouTube"
+      >
+        <img
+          src="https://img.youtube.com/vi/j6O6eHJ2jew/hqdefault.jpg"
+          alt="Chewverse YouTube video cover"
+          class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+        />
+        <div class="absolute inset-0 flex items-center justify-center bg-black/20 transition-colors duration-300 group-hover:bg-black/30">
+          <div class="flex h-14 w-14 items-center justify-center rounded-full bg-white/90 shadow-lg">
+            <span class="ml-1 text-lg text-[#FA781E]">▶</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Opportunity & Problem Definition -->
+      <section id="opportunity" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#FFA600]">Opportunity &amp; Problem Definition</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-4">
+            <p>
+              Solitary dining is increasingly common in cities: people often have only <span class="font-medium">15–20 minutes</span> for lunch, and many prefer eating alone because their friends and colleagues are busy. Research indicates that <span class="font-medium">42 % of people dine alone at least three times per week</span> and <span class="font-medium">60 % feel lonely during meals</span>. Meanwhile, existing products focus on food discovery, delivery or passive content consumption; they don’t address the emotional needs of diners.
+            </p>
+            <p>
+              <strong>Opportunity:</strong> There is a whitespace for an AI‑assisted service that provides low‑pressure, emotionally responsive companionship during short meals. Instead of scrolling feeds that lower attention and mood, Chewverse offers a lightweight human‑like interaction that finishes when your lunch does.
+            </p>
+            <h3 class="font-semibold mt-4 text-[#FFA600]">How might we…</h3>
+            <p class="italic text-[#FA781E] text-base md:text-lg">Create low‑pressure companionship for solo diners during a short meal break?</p>
+            <h3 class="font-semibold mt-4 text-[#FFA600]">Product principles</h3>
+            <ul class="list-disc list-inside space-y-1">
+              <li><span class="font-medium">Low social burden</span> – the experience should start quickly and end gracefully, without awkwardness.</li>
+              <li><span class="font-medium">Emotionally responsive</span> – the AI should adjust tone and topics to the user’s mood, offering empathy when needed.</li>
+              <li><span class="font-medium">Fast start &amp; finish</span> – onboarding and exit must fit within a 15–20 minute window.</li>
+            </ul>
+          </div>
+          <div>
+            <img src="chewverse-research.png" alt="Infographic summarising meal duration and solo dining statistics" class="w-full h-auto rounded-lg" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Use AI -->
+      <section id="why-ai" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#FFA600]">Why use AI?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-3">
+            <h3 class="font-semibold text-[#FFA600]">1. Human companionship isn’t always available during solo meals.</h3>
+            <p class="leading-relaxed">
+              Most solo dining moments last only 15–20 minutes. People often want lightweight emotional interaction — not long conversations, social commitment, or scheduling another person. AI enables instant, low-pressure companionship that is available anytime, without requiring social coordination.
+            </p>
+          </div>
+          <div class="space-y-3">
+            <h3 class="font-semibold text-[#FFA600]">2. Emotional support needs to be adaptive and contextual.</h3>
+            <p class="leading-relaxed">
+              Different users experience solo dining differently: some want distraction, some want emotional comfort, others simply want a quiet presence. AI allows Chewverse to respond dynamically based on mood, interaction style, and conversational cues — creating a more emotionally personalized experience.
+            </p>
+          </div>
+          <div class="space-y-3">
+            <h3 class="font-semibold text-[#FFA600]">3. Traditional social products create cognitive and social pressure.</h3>
+            <p class="leading-relaxed">
+              Messaging friends, joining communities, or meeting strangers can feel emotionally demanding during short breaks. Instead of maximizing engagement, Chewverse uses AI to create lightweight interactions, interruptible conversations, and emotionally safe experiences. Users can enter and leave freely without social consequences.
+            </p>
+          </div>
+          <div class="space-y-3">
+            <h3 class="font-semibold text-[#FFA600]">4. AI transforms dining from a passive activity into an emotionally responsive experience.</h3>
+            <p class="leading-relaxed">
+              Rather than functioning as a chatbot, Chewverse explores how AI can act as a contextual companion, a reflective listener, and a low-friction emotional interface during everyday routines. The goal is not replacing human relationships, but supporting small moments of emotional connection throughout daily life.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- User Insight -->
+      <section id="insight" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#FFA600]">User Insight</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+          <div class="space-y-4">
+            <p>
+              To ground the opportunity, I built a primary persona based on interviews and surveys:
+            </p>
+            <h3 class="font-semibold text-[#FFA600]">Mandy – 26‑year‑old marketing professional</h3>
+            <ul class="list-disc list-inside space-y-1">
+              <li><span class="font-medium">Lunch constraint:</span> typically only 15 minutes to eat; often eats alone due to conflicting schedules.</li>
+              <li><span class="font-medium">Pain points:</span> feels socially isolated, finds existing apps overly complex or information‑dense, doesn’t want to doom‑scroll at lunch.</li>
+              <li><span class="font-medium">Behaviour:</span> uses short videos or social media during meals but feels emptier afterwards.</li>
+            </ul>
+            <p>
+              The insight was clear: users aren’t seeking more content; they crave a light, human‑like presence that fits into a short break.
+            </p>
+          </div>
+          <div>
+            <div class="border border-gray-200 rounded-lg overflow-hidden">
+              <img src="chewverse-persona.png" alt="Persona card for Mandy" class="w-full h-auto rounded" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Direction & Concept Convergence -->
+      <section id="direction" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#FFA600]">Product Direction &amp; Concept Convergence</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-4">
+            <p>
+              I explored multiple directions before converging on the final concept:
+            </p>
+            <ul class="list-disc list-inside space-y-1">
+              <li><span class="font-medium">Smart restaurant experience</span> – integrate seat finding, menu browsing and ordering into one service.</li>
+              <li><span class="font-medium">AI search/utility</span> – a personal assistant to recommend meals, manage orders and provide information.</li>
+              <li><span class="font-medium">Affective design</span> – focus on emotional support through conversation and mood‑sensing.</li>
+            </ul>
+            <p>
+              By mapping these ideas against user needs and feasibility, I prioritised <em>affective design</em> for the MVP. It solved the core loneliness problem while keeping the scope lean. Utility and restaurant integrations remain important, but they are secondary steps once the companionship experience is validated.
+            </p>
+            <figure class="space-y-2">
+              <img src="chewverse-stakeholder.png" alt="Chewverse stakeholder image" class="w-full max-w-[360px] h-auto rounded-lg" />
+              <figcaption class="text-xs leading-relaxed text-gray-600">Stakeholder Mapping</figcaption>
+            </figure>
+          </div>
+          <div class="space-y-4">
+            <figure class="space-y-2">
+              <img src="chewverse-exploration.png" alt="Iceberg visual showing exploration and convergence" class="w-full max-w-[360px] mx-auto h-auto rounded-lg" />
+              <figcaption class="text-xs leading-relaxed text-gray-600 text-center">Iceberg Model</figcaption>
+            </figure>
+            <img src="chewverse-team-1.png" alt="Chewverse team image" class="w-full max-w-[360px] mx-auto h-auto rounded-lg" />
+          </div>
+        </div>
+      </section>
+
+      <!-- MVP Strategy & Feature Prioritisation -->
+      <section id="mvp" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#FFA600]">MVP Strategy &amp; Feature Prioritisation</h2>
+        <p>
+          To deliver value quickly, the MVP focuses on low‑friction companionship. Features are prioritised by impact and effort:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Core MVP Card -->
+          <div class="p-4 border border-gray-200 rounded-lg bg-gray-50 space-y-3">
+            <h3 class="font-semibold mb-1 text-[#FFA600]">Core MVP</h3>
+            <table class="w-full text-left text-xs md:text-sm">
+              <thead>
+                <tr class="border-b">
+                  <th class="py-1 pr-2 font-medium">Feature</th>
+                  <th class="py-1 pl-2 font-medium">Rationale</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y">
+                <tr>
+                  <td class="py-1 pr-2 align-top font-medium">AI chat with mood‑responsive topics</td>
+                  <td class="py-1 pl-2">Users can start a conversation with one tap and choose from curated topics like small talk, fun facts or wellbeing. The AI adjusts tone based on detected sentiment.</td>
+                </tr>
+                <tr>
+                  <td class="py-1 pr-2 align-top font-medium">Rapid topic selector</td>
+                  <td class="py-1 pl-2">A simple picker surfaces relevant topics immediately, so users don’t waste time choosing.</td>
+                </tr>
+                <tr>
+                  <td class="py-1 pr-2 align-top font-medium">Light emotional check‑in</td>
+                  <td class="py-1 pl-2">At the start and end, the AI asks a quick check‑in to tailor the conversation and allow users to exit gracefully.</td>
+                </tr>
+                <tr>
+                  <td class="py-1 pr-2 align-top font-medium">Fast onboarding</td>
+                  <td class="py-1 pl-2">Users can begin chatting without creating a profile; optional sign‑in unlocks history and personalisation.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Future Features Card -->
+          <div class="p-4 border border-gray-200 rounded-lg bg-gray-50 space-y-3">
+            <h3 class="font-semibold mb-1 text-[#FFA600]">Secondary &amp; Future Features</h3>
+            <table class="w-full text-left text-xs md:text-sm">
+              <thead>
+                <tr class="border-b">
+                  <th class="py-1 pr-2 font-medium">Future feature</th>
+                  <th class="py-1 pl-2 font-medium">Reason for deferral</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y">
+                <tr>
+                  <td class="py-1 pr-2 align-top font-medium">Chat with real users (Table for Two)</td>
+                  <td class="py-1 pl-2">Adds social complexity and moderation; slated for later once solo AI chat value is proven.</td>
+                </tr>
+                <tr>
+                  <td class="py-1 pr-2 align-top font-medium">Group table (AI + multiple users)</td>
+                  <td class="py-1 pl-2">Requires strong community management; better after learning from one‑to‑one chats.</td>
+                </tr>
+                <tr>
+                  <td class="py-1 pr-2 align-top font-medium">AI meal recommendation</td>
+                  <td class="py-1 pl-2">Useful when integrated with ordering, but not essential to validate companionship.</td>
+                </tr>
+                <tr>
+                  <td class="py-1 pr-2 align-top font-medium">Restaurant dashboard &amp; service integration</td>
+                  <td class="py-1 pl-2">Enables partnerships and monetisation; deferred to post‑MVP once user demand is established.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p>
+          By deliberately limiting scope, we ensured the MVP could be built and tested quickly. Success metrics focused on session completion, user satisfaction and qualitative feedback rather than growth vanity metrics.
+        </p>
+        <img src="chewverse-journeymap.png" alt="Chewverse journey map" class="w-full max-w-3xl h-auto rounded-lg" />
+      </section>
+
+      <!-- Product Flow -->
+      <section id="flow" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#FFA600]">Product Flow</h2>
+        <p>
+          The experience is designed around the rhythm of a short meal. A high‑level flow:
+        </p>
+        <ol class="list-decimal list-inside space-y-1">
+          <li><span class="font-medium">Landing / Home</span> – users are greeted with options: Chat with AI, Table for Two, Group Table, or Order &amp; Chat.</li>
+          <li><span class="font-medium">Choose interaction</span> – selecting Chat with AI opens a mood‑check prompt and topic selector.</li>
+          <li><span class="font-medium">Conversation</span> – the AI initiates a conversation aligned with the chosen topic, adjusting to the user’s responses; a visible timer or progress indicator reassures users of the limited duration.</li>
+          <li><span class="font-medium">Optional extras</span> – after chatting, users can explore restaurant menus, ask for meal recommendations or join a community chat if desired.</li>
+          <li><span class="font-medium">Feedback &amp; exit</span> – at the end, users can rate the experience and leave immediately.</li>
+        </ol>
+        <p>
+          The flow emphasises minimal setup, quick transitions and a defined session length, reflecting the research insights.
+        </p>
+        <img src="chewverse-flow.png" alt="Flow diagram illustrating the Chewverse user journey" class="w-full h-auto rounded-lg" />
+      </section>
+
+      <!-- Usability Testing & Iteration -->
+      <section id="testing" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#FFA600]">Usability Testing &amp; Iteration</h2>
+        <p>
+          I validated the MVP through moderated usability tests with <span class="font-medium">12 participants aged 22–35</span>, including a tester from Georgia Tech. Tasks covered account creation, starting an AI chat, selecting topics and joining a shared table. Key findings:
+        </p>
+        <ul class="list-disc list-inside space-y-1">
+          <li><span class="font-medium">Ambiguous icons</span> – some action icons lacked clear visual cues, causing hesitation.</li>
+          <li><span class="font-medium">Low contrast</span> – the beige colour scheme reduced legibility for certain users.</li>
+          <li><span class="font-medium">Navigation friction</span> – participants struggled to find the rating function after finishing a chat.</li>
+        </ul>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <img src="usability-testing-1.png" alt="Usability testing screenshot 1" class="w-full h-auto rounded-lg" />
+          <img src="usability-testing-2.png" alt="Usability testing screenshot 2" class="w-full h-auto rounded-lg" />
+        </div>
+        <p>
+          Based on these insights, I:
+        </p>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Redesigned icons to communicate meaning without relying on text.</li>
+          <li>Increased colour contrast and adjusted typography for faster comprehension.</li>
+          <li>Streamlined the exit flow and relocated the rating prompt to a more intuitive location.</li>
+          <li>Clarified labels for features like Table for Two and Group Table.</li>
+        </ul>
+        <p>
+          After iteration, participants completed tasks more confidently. The System Usability Scale (SUS) score improved to <span class="font-semibold text-[#FA781E] text-base md:text-lg">83.3 / 100</span>, indicating strong usability for an MVP.
+        </p>
+        <div class="grid grid-cols-1 xl:grid-cols-[1fr_auto_1fr] gap-8 items-center">
+          <ul class="space-y-5 text-center xl:text-right">
+            <li class="flex flex-row-reverse items-start justify-center xl:justify-start gap-3">
+              <span class="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-black"></span>
+              <span class="leading-relaxed">Abstract icons</span>
+            </li>
+            <li class="flex flex-row-reverse items-start justify-center xl:justify-start gap-3">
+              <span class="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-black"></span>
+              <span class="leading-relaxed">Some labels may cause confusion, for example, "Table for Two."</span>
+            </li>
+            <li class="flex flex-row-reverse items-start justify-center xl:justify-start gap-3">
+              <span class="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-black"></span>
+              <span class="leading-relaxed">Identified issues</span>
+            </li>
+            <li class="flex flex-row-reverse items-start justify-center xl:justify-start gap-3">
+              <span class="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-black"></span>
+              <span class="leading-relaxed">The interface contains too much text and lacks sufficient visual cues, making it hard to quickly understand each function at first glance.</span>
+            </li>
+            <li class="flex flex-row-reverse items-start justify-center xl:justify-start gap-3">
+              <span class="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-black"></span>
+              <span class="leading-relaxed">Inconsistent text size and low contrast further affect readability.</span>
+            </li>
+          </ul>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+            <div class="space-y-3">
+              <p class="text-center font-semibold text-base md:text-lg">Before</p>
+              <img src="before-testing.png" alt="Before usability testing screen" class="w-full max-w-[280px] mx-auto h-auto rounded-lg" />
+            </div>
+            <div class="space-y-3">
+              <p class="text-center font-semibold text-base md:text-lg text-[#FA781E]">After</p>
+              <img src="after-testing.png" alt="After usability testing screen" class="w-full max-w-[280px] mx-auto h-auto rounded-lg" />
+            </div>
+          </div>
+          <ul class="space-y-5 text-center xl:text-left">
+            <li class="flex items-start justify-center xl:justify-start gap-3">
+              <span class="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-black"></span>
+              <span class="leading-relaxed">"Table for Two" renamed to "Quick Table Pair" with a new icon illustrating two people chatting</span>
+            </li>
+            <li class="flex items-start justify-center xl:justify-start gap-3">
+              <span class="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-black"></span>
+              <span class="leading-relaxed">Increased color contrast to create a more vibrant atmosphere</span>
+            </li>
+            <li class="flex items-start justify-center xl:justify-start gap-3">
+              <span class="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-black"></span>
+              <span class="leading-relaxed">Redesigned icons to reduce reliance on text</span>
+            </li>
+            <li class="flex items-start justify-center xl:justify-start gap-3">
+              <span class="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-black"></span>
+              <span class="leading-relaxed">Replaced the "Gear" on the icon with a "Profile" icon that better represents user identity</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Outcome -->
+      <section id="outcome" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#FFA600]">Outcome</h2>
+        <p class="max-w-4xl leading-relaxed">
+          The final concept brings together research, interaction design and product strategy into a cohesive AI dining companion experience. The outcome demonstrates how Chewverse can translate a short, emotionally sensitive lunch break into a lightweight and approachable product flow.
+        </p>
+        <img src="chewverse-outcome.png" alt="Final outcome for the Chewverse concept" class="w-full max-w-6xl h-auto rounded-lg" />
+      </section>
+
+      <!-- Product Value & Future Potential -->
+      <section id="value" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#FFA600]">Product Value &amp; Future Potential</h2>
+        <p>Chewverse delivers value on multiple levels:</p>
+        <ul class="list-disc list-inside space-y-1">
+          <li><span class="font-medium">Emotional wellbeing</span> – it transforms a solitary meal into a moment of connection, reducing feelings of loneliness and improving mood.</li>
+          <li><span class="font-medium">AI as everyday companion</span> – it showcases AI not just as a productivity tool but as a lightweight, personable presence in daily life.</li>
+          <li><span class="font-medium">Ecosystem potential</span> – the concept could extend into smart restaurant services, partnering with cafés and delivery platforms to offer unique dining experiences.</li>
+          <li><span class="font-medium">Differentiated service layer</span> – restaurants could adopt Chewverse to attract solo diners, increase dwell time and collect feedback through AI‑mediated interactions.</li>
+        </ul>
+        <p>
+          This mix of emotional and commercial value makes Chewverse more than a design experiment—it hints at a scalable product opportunity.
+        </p>
+      </section>
+
+      <!-- Reflection & PM Takeaways -->
+      <section id="reflection" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#FFA600]">Reflection &amp; PM Takeaways</h2>
+        <p>This project taught me to translate an emotional pain point into a tangible product experience. Key lessons:</p>
+        <ul class="list-disc list-inside space-y-1">
+          <li><span class="font-medium">Start with the problem</span> – by focusing on the loneliness during short meals, the concept stayed grounded in a real user need.</li>
+          <li><span class="font-medium">Scope ruthlessly</span> – limiting the MVP to core companionship features allowed us to build and test quickly, without getting distracted by attractive but non‑essential ideas.</li>
+          <li><span class="font-medium">Balance desirability and feasibility</span> – I weighed user value against technical constraints and team capacity to prioritise features.</li>
+          <li><span class="font-medium">Design AI with care</span> – AI can feel intrusive; the tone, pacing and opt‑out mechanisms had to respect users’ emotional state.</li>
+          <li><span class="font-medium">Iterate with evidence</span> – usability tests uncovered issues early, leading to measurable improvements.</li>
+          <li><span class="font-medium">Recognise the limits of testing environments</span> – one thing I would improve is conducting usability tests in real dining contexts rather than controlled settings.</li>
+          <li><span class="font-medium">Collaborate cross‑functionally</span> – working closely with three programmers meant aligning on feasibility, back‑end integration and future scalability from the start.</li>
+        </ul>
+        <p>
+          These experiences align with Acer’s emphasis on exploring AI‑enabled applications and thinking strategically about product opportunities. Chewverse shows that I can move beyond visual design to orchestrate research, strategy and execution—skills essential for a Product Management Intern.
+        </p>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
