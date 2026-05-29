@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clear — Immersive VR Emotional Relief</title>
+  <!-- Import the same typeface used across the portfolio -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+  <!-- Tailwind CSS CDN for rapid utility classes -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Roboto Mono', monospace;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 text-sm md:text-base">
+  <div class="flex min-h-screen">
+    <!-- Side Navigation -->
+    <nav class="w-48 p-6 flex flex-col space-y-4">
+      <a href="index.html" class="text-base font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-400">Jess</a>
+      <!-- Primary navigation links -->
+      <a href="about.html" class="text-base font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-400">About</a>
+    </nav>
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+            <!-- Hero Section -->
+      <section class="relative overflow-hidden rounded-lg group">
+        <img src="clear-hero.png" alt="Hero collage for Chewverse" class="w-full h-56 md:h-80 object-cover transition-transform duration-300 group-hover:scale-105" />
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-6 md:p-8 space-y-2">
+          <h1 class="text-[#FFA600] text-3xl md:text-4xl font-semibold">Chewverse</h1>
+          <p class="text-white text-base md:text-lg">An AI dining companion concept designed to make short solo meals feel lighter, more personal, and emotionally engaging.</p>
+          <div class="text-white text-xs md:text-sm space-x-2">
+            <span>Mar&nbsp;2025 – July&nbsp;2025</span>
+          </div>
+          <div class="text-white text-xs md:text-sm">My Role: Immersive Scene Designer, 3D Designer, Interaction Designer</div>
+          <div class="text-white text-xs md:text-sm">Collaboration: Caesar Wu (Project Manager, Programmer), Cheng-Ye, Yang (Programmer)</div>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="px-2 py-1 border border-white text-white rounded-full text-xs">Virtual Reality</span>
+            <span class="px-2 py-1 border border-white text-white rounded-full text-xs">AI User Experience</span>
+            <span class="px-2 py-1 border border-white text-white rounded-full text-xs">Storytelling</span>
+            <span class="px-2 py-1 border border-white text-white rounded-full text-xs">Blender</span>
+            <span class="px-2 py-1 border border-white text-white rounded-full text-xs">Emotional Wellbeing</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Problem Definition -->
+      <section class="mt-16 space-y-4">
+        <h3 class="text-xl md:text-2xl font-semibold">Problem Definition</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="space-y-4">
+            <p>Work has never been more demanding, and mental health has become a critical concern for employees and employers alike. Today’s AI‑powered chat assistants can answer questions but often lack the empathy, nuance and sensory richness needed for true emotional relief. Workers approaching burnout may not feel comfortable sharing sensitive feelings with a text bot, and audio‑only meditation apps may not provide enough immersion to reset.</p>
+            <p>Clear asks: what if we could step into a space that senses how we feel, responds gently and gives us room to breathe? The project started with interviews and diary studies to understand the tension between productivity and wellbeing; this informed a hypothesis that combining VR environments with emotion‑aware interaction could unlock a new class of wellness product.</p>
+          </div>
+          <!-- Supporting visual -->
+          <div>
+            <img src="clear_3d_01.png" alt="Exploratory immersive environment concept" class="rounded-xl shadow-lg w-full object-cover border border-[#4B2E2E] border-[0.5px]" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Market & Technology Insight -->
+      <section class="mt-16 space-y-4">
+        <h3 class="text-xl md:text-2xl font-semibold">Market &amp; Technology Insight</h3>
+        <p>Immersive wellness tools are part of a rapidly growing market. Analysts project that the spiritual tech and wellness sector—spanning meditation apps, mindfulness devices, virtual reality experiences and biofeedback systems—will continue to expand significantly as mental health becomes a priority. This growth is driven by a desire for accessible, effective solutions that promote overall well‑being.</p>
+        <p>Within this space, audio‑first apps such as Calm and Headspace dominate mainstream meditation but rely on screen‑based guidance. <em>Tripp</em>, a VR wellness platform, uses generative art and gamified meditation; it emphasises assessment and customisation for users but still treats people as a generalised persona. Clear builds on these precedents by exploring emotion‑aware interaction and deeper personalisation.</p>
+        <p>Advances in spatial computing make this exploration possible. Apple Vision Pro’s ultra‑high‑resolution micro‑OLED displays and dedicated processing chips work together with twelve cameras, five sensors and six microphones to blend real and virtual worlds fluidly. External sensors map the room and track your hands, while internal cameras follow your eye movements for precise interaction. Having participated in <em>Today at Apple – Student Developers</em> gave me early exposure to visionOS and inspired much of this concept.</p>
+      </section>
+
+      <!-- Product Goal & Success Metrics -->
+      <section class="mt-16 space-y-4">
+        <h3 class="text-xl md:text-2xl font-semibold">Product Goal &amp; Success Metrics</h3>
+        <p>Our goal is to investigate whether an emotionally aware, immersive environment can provide deeper and more restorative relief than conventional chat‑based support tools. To guide early prototyping and learning we defined directional metrics instead of fixed KPIs:</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mt-4">
+          <div class="p-4 border border-gray-200 rounded-lg">
+            <span class="font-bold block">Weekly return rate</span>
+            <span>Are people making Clear part of their routine?</span>
+          </div>
+          <div class="p-4 border border-gray-200 rounded-lg">
+            <span class="font-bold block">Session completion</span>
+            <span>Do users complete a guided sequence?</span>
+          </div>
+          <div class="p-4 border border-gray-200 rounded-lg">
+            <span class="font-bold block">Stress reduction</span>
+            <span>How do users self‑report feelings after each session?</span>
+          </div>
+          <div class="p-4 border border-gray-200 rounded-lg">
+            <span class="font-bold block">Comfort &amp; immersion</span>
+            <span>Does the environment feel natural and soothing?</span>
+          </div>
+          <div class="p-4 border border-gray-200 rounded-lg">
+            <span class="font-bold block">Repeat intent</span>
+            <span>Would users return or recommend Clear?</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Core Features & Prioritization -->
+      <section class="mt-16 space-y-8">
+        <h3 class="text-xl md:text-2xl font-semibold">Core Features &amp; Prioritization</h3>
+        <!-- Feature 1 -->
+        <div class="flex gap-4">
+          <div class="w-12 flex-shrink-0">
+            <div class="text-lg font-bold">P1</div>
+          </div>
+          <div class="flex-1 space-y-2">
+            <h4 class="text-xl font-semibold">Emotion‑Aware Detection</h4>
+            <p>Detect the user’s emotional state through facial expressions, behavioural cues and optional biometric signals. Clear uses this data to choose environments and adjust pacing, creating a sense of being understood without forcing the user to articulate how they feel.</p>
+            <p>Strategically this anchors Clear’s value in personalisation, differentiating it from generic meditation apps. The trade‑off lies in sensor accuracy and privacy; emotion detection must be optional and processed on device to maintain trust.</p>
+          </div>
+        </div>
+        <!-- Feature 2 -->
+        <div class="flex gap-4">
+          <div class="w-12 flex-shrink-0">
+            <div class="text-lg font-bold">P2</div>
+          </div>
+          <div class="flex-1 space-y-2">
+            <h4 class="text-xl font-semibold">Interactive Healing Environments</h4>
+            <p>Create a library of immersive spaces—misty forests, ocean sunrises, calming natural settings—where users can gently interact with the world. Simple gestures like touching leaves, following light or watching animals encourage grounding rather than gamification.</p>
+            <p>These environments translate abstract relief into tangible experience and are the heart of Clear. To deliver them at scale we must balance high visual quality with performance, ensuring comfort on current and future headsets.</p>
+          </div>
+        </div>
+        <!-- Feature 3 -->
+        <div class="flex gap-4">
+          <div class="w-12 flex-shrink-0">
+            <div class="text-lg font-bold">P3</div>
+          </div>
+          <div class="flex-1 space-y-2">
+            <h4 class="text-xl font-semibold">Personalized Story Paths</h4>
+            <p>Adapt scenes and narrative progression based on the user’s emotional history and usage patterns. Over time, Clear learns which environments resonate and weaves them into a gently evolving story that deepens retention and perceived care.</p>
+            <p>This feature fosters long‑term engagement and positions Clear as a companion rather than a tool. It increases technical complexity and requires careful testing to avoid uncanny or inappropriate responses.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Roadmap -->
+      <section class="mt-16 space-y-4">
+        <h3 class="text-xl md:text-2xl font-semibold">Product Roadmap</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-4">
+          <!-- Short Term -->
+          <div class="border border-gray-200 rounded-lg p-4 space-y-2">
+            <h4 class="text-lg font-bold">MVP / Q4 2025</h4>
+            <ul class="list-disc list-inside space-y-1">
+              <li>Build core calming environments with high fidelity.</li>
+              <li>Prototype emotion‑aware response logic using facial and behavioural cues.</li>
+              <li>Test with ≈20 users and gather feedback with a psychological consultant.</li>
+              <li>Identify UX friction and comfort issues such as motion sickness or device fatigue.</li>
+            </ul>
+          </div>
+          <!-- Mid Term -->
+          <div class="border border-gray-200 rounded-lg p-4 space-y-2">
+            <h4 class="text-lg font-bold">Mid Term / 2026</h4>
+            <ul class="list-disc list-inside space-y-1">
+              <li>Enhance AI responsiveness and personalisation; integrate mood journaling.</li>
+              <li>Explore lighter‑weight mobile AR or companion experiences to reduce barriers to entry.</li>
+              <li>Pursue content partnerships (music therapy, guided journaling) to diversify offerings.</li>
+              <li>Evaluate adoption metrics and refine pricing and distribution strategy.</li>
+            </ul>
+          </div>
+          <!-- Long Term -->
+          <div class="border border-gray-200 rounded-lg p-4 space-y-2">
+            <h4 class="text-lg font-bold">Long Term / 2026+</h4>
+            <ul class="list-disc list-inside space-y-1">
+              <li>Expand Clear into an emotional journaling and health management ecosystem.</li>
+              <li>Partner with healthcare and wellness institutions for validation and distribution.</li>
+              <li>Investigate B2B or subscription models via employee wellness programmes.</li>
+              <li>Contribute research to define ethical standards for emotion‑aware VR.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Implementation Considerations / Risks / Privacy -->
+      <section class="mt-16 space-y-4">
+        <h3 class="text-xl md:text-2xl font-semibold">Implementation Considerations, Risks &amp; Privacy</h3>
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong>Sensor accuracy:</strong> emotional detection algorithms may misinterpret expressions; calibrating for different face shapes and cultures is critical.</li>
+          <li><strong>Performance &amp; overheating:</strong> immersive environments demand high fidelity; we must optimise assets to prevent hardware strain and maintain comfort.</li>
+          <li><strong>Motion sickness &amp; comfort:</strong> session length, pacing and locomotion need careful design to avoid nausea and encourage relaxation.</li>
+          <li><strong>Visual quality vs. technical performance:</strong> delivering cinematic visuals without compromising frame rate requires thoughtful art direction and engineering.</li>
+          <li><strong>Privacy &amp; ethics:</strong> emotional data should be processed on device whenever possible. Only aggregate insights are stored, and user consent must be explicit. Collaboration with psychological consultants and adherence to ethical guidelines are non‑negotiable.</li>
+        </ul>
+      </section>
+
+      <!-- Reflection & Strategic Next Step -->
+      <section class="mt-16 space-y-4 mb-12">
+        <h3 class="text-xl md:text-2xl font-semibold">Reflection &amp; Strategic Next Step</h3>
+        <p>Thinking through Clear pushed me beyond interface design into the realm of product strategy. Translating intangible feelings into concrete interactions required empathy, experimentation and respect for the limits of current technology. Balancing aesthetic delight with technical feasibility and user trust highlighted the complexity of building immersive wellness products.</p>
+        <p>I learned that VR and AI are not silver bullets but powerful tools when grounded in clear human needs and ethical principles. This exploration strengthened my interest in AI‑enabled immersive product strategy and underscored why a holistic view of design, business and technology matters.</p>
+        <p>For Acer, understanding how to deliver value within the next generation of devices is essential. Future hardware will rely on AI‑driven, spatial experiences; by exploring emotion‑aware VR now, we prepare for that landscape. If I were to continue Clear, I would validate the MVP with real users, refine emotion detection models and explore collaborative wellness features that transform Clear from a solitary retreat into part of a healthy daily routine.</p>
+      </section>
+      <!-- End of main content -->
+      <footer class="border-t pt-4 mt-8 text-sm md:text-base flex justify-between items-center">
+        <p>Jess Lu — 2025</p>
+        <div class="flex space-x-4">
+          <a href="mailto:b10105028@g.ntu.edu.tw" class="hover:underline">Email</a>
+          <a href="https://www.linkedin.com" target="_blank" class="hover:underline">LinkedIn</a>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

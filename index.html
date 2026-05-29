@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jess Lu Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Roboto Mono', monospace;
+      
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 text-sm md:text-base">
+  <div class="flex min-h-screen">
+    <!-- Side Navigation -->
+    <nav class="w-48 p-6 flex flex-col space-y-4">
+      <a href="index.html" class="text-base font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-400">Jess</a>
+      <a href="about.html" class="text-base font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-400">About</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+      <!-- Introduction Section -->
+      <section class="flex flex-col md:flex-row items-center md:items-start gap-6">
+        <div class="md:w-2/3 space-y-4">
+            <h2 class="text-xl md:text-2xl font-semibold">Hello!</h2>
+            <p>I'm Jess, a Product Manager focused on building AI-native and immersive technology products. Previously led AI learning features at an EdTech startup, scaling to 3,000+ users and 50% weekly active user growth.</p>
+            <p>Passionate about turning AI, social technology, and spatial computing into intuitive, scalable products.</p>
+          </div>
+          <img src="myphoto.png" alt="Jess Photo" class="rounded-xl shadow-lg w-48 h-48 md:w-60 md:h-60 object-cover md:ml-4 mt-12" />
+      </section>
+
+      <!-- Projects Section -->
+      <section class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-12">
+        <!-- Project 1 -->
+        <a href="nibble.html" class="group block">
+          <img src="nibble.png" alt="Nibble" class="aspect-video w-full object-cover rounded-xl shadow-lg group-hover:scale-105 transition-transform duration-300" />
+          <h3 class="mt-6 font-bold hover:underline">Nibble - Small Bite of Life</h3>
+          <p class="hover:underline">Built a private video-sharing app through full-stack AI-assisted development, validated through 40+ user interviews.</p>
+        </a>
+        <!-- Project 2 -->
+        <a href="picturecook.html" class="group block">
+          <img src="picturecook.png" alt="PictureCook" class="aspect-video w-full object-cover rounded-xl shadow-lg group-hover:scale-105 transition-transform duration-300" />
+          <h3 class="mt-6 font-bold hover:underline">PictureCook - AI Companion for Kids</h3>
+          <p class="hover:underline">Led product strategy and development for AI-driven feature and children UX that reached 3,000+ users and drove 50% week-over-week growth.</p>
+        </a>
+        <!-- Project 3 -->
+        <a href="clear.html" class="group block">
+          <img src="clear.jpg" alt="Peach App" class="aspect-video w-full object-cover rounded-xl shadow-lg group-hover:scale-105 transition-transform duration-300" />
+          <h3 class="mt-6 font-bold hover:underline">Clear – Immersive VR Experience</h3>
+          <p class="hover:underline">Conceptualized and designed an AI-driven VR emotional wellness experience and presented the project at Apple’s Today@Apple developer session.</p>
+        </a>
+        <!-- Project 4 -->
+        <a href="chewverse.html" class="group block">
+          <img src="chewverse.png" alt="Chewverse" class="aspect-video w-full object-cover rounded-xl shadow-lg group-hover:scale-105 transition-transform duration-300" />
+          <h3 class="mt-6 font-bold hover:underline">Chewverse - AI Dining Companion</h3>
+          <p class="hover:underline">An AI-powered dining companion that can reduce meal-time loneliness, addressing a problem experienced by 60% of solo diners</p>
+        </a>
+      </section>
+
+      <!-- Footer -->
+      <footer class="mt-12 flex justify-between items-center text-sm md:text-base border-t pt-4">
+        <p>Jess Lu — 2026</p>
+        <div class="flex space-x-4">
+          <a href="mailto:b10105028@g.ntu.edu.tw.com" class="hover:underline">Email</a>
+          <a href="https://www.linkedin.com" target="_blank" class="hover:underline">LinkedIn</a>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
