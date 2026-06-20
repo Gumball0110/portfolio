@@ -99,34 +99,50 @@
         </div>
       </section>
 
-      <!-- Problem & Insights -->
-      <section class="space-y-8">
+      <!-- Motivation -->
+      <section class="space-y-6">
         <h2 class="text-xl md:text-2xl font-semibold text-[#AC0033] border-b border-gray-200 pb-2">
-          Problem &amp; Insights
+          Motivation
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-          <div class="space-y-4">
-            <h3 class="text-lg font-medium text-[#FE6593]">Motivation</h3>
+        <p class="max-w-4xl leading-relaxed">
+          Over 700&nbsp;million children in Asia experience test-driven English education, where they memorise for exams but rarely speak. Research shows that having just one close friend to talk to makes children roughly <span class="font-semibold text-[#FE6593]">1.6× more likely</span> to progress in language learning.
+        </p>
+      </section>
+
+      <!-- Product Strategy Overview -->
+      <section class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#AC0033] border-b border-gray-200 pb-2">
+          Product Strategy Overview
+        </h2>
+        <p class="max-w-4xl leading-relaxed">
+          PictureCook grew around two complementary product experiences: one designed to build a daily relationship with an AI companion, and another designed to give children an open-ended space for creativity, emotional expression, and self-directed play.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="rounded-lg bg-[#FFF4F8] p-5 space-y-2">
+            <h3 class="text-lg font-medium text-[#FE6593]">Tom’s Diary</h3>
             <p class="leading-relaxed">
-              Over 700&nbsp;million children in Asia experience test-driven English education, where they memorise for exams but rarely speak. Research shows that having just one close friend to talk to makes children roughly <span class="font-semibold text-[#FE6593]">1.6× more likely</span> to progress in language learning.
-            </p>
-            <p class="leading-relaxed">
-              This led to the core opportunity: instead of making another lesson product, PictureCook could turn AI into a warm companion that children want to talk with every day.
+              A daily AI companion experience that encourages children to reply through voice, photos, and drawings.
             </p>
           </div>
-          <div class="space-y-4">
-            <h3 class="text-lg font-medium text-[#FE6593]">Ideation: Tom’s Diary</h3>
+          <div class="rounded-lg bg-[#FFF4F8] p-5 space-y-2">
+            <h3 class="text-lg font-medium text-[#FE6593]">Tom’s Home</h3>
             <p class="leading-relaxed">
-              Every day, Tom the Tomato sends a postcard to the child, sharing an animated moment from his day and asking a question to encourage the child to share theirs. Children reply using voice recordings, photos, or drawings, and Tom responds again through AI.
+              An open-ended play space where children can arrange objects, talk with Tom, and explore without fixed tasks.
             </p>
           </div>
         </div>
+      </section>
 
+      <!-- Feature 1 -->
+      <section class="space-y-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-[#AC0033] border-b border-gray-200 pb-2">
+          Feature 1: Tom’s Diary – AI Companion
+        </h2>
         <div class="space-y-6">
           <div class="space-y-4">
             <h3 class="text-lg font-medium text-[#FE6593]">Early Experiment</h3>
             <p class="max-w-4xl leading-relaxed">
-              To validate emotional engagement before building the full AI feature, I partnered with a kindergarten in New&nbsp;Taipei City for a four-week physical postcard pilot.
+              To validate emotional engagement before building the full AI feature, we partnered with a kindergarten in New&nbsp;Taipei City for a four-week physical postcard pilot.
             </p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-3 text-center items-stretch">
@@ -156,68 +172,132 @@
             <img src="picturecook-experiment-2.jpg" alt="Handwritten child response from PictureCook postcard experiment" class="w-full max-w-[180px] md:max-w-[210px] mx-auto rounded-lg shadow-md rotate-[1deg]" />
             <img src="picturecook-experiment-3.jpg" alt="Child drawing response from PictureCook postcard experiment" class="w-full max-w-[180px] md:max-w-[210px] mx-auto rounded-lg shadow-md rotate-[-1deg]" />
           </div>
-          <div class="space-y-2">
-            <h3 class="font-semibold text-[#FE6593]">How might we…</h3>
-            <p class="italic text-[#FE6593] text-base md:text-lg">
-              Turn an AI companion into a friend, not another lesson?
-            </p>
-          </div>
+        </div>
+
+        <div class="max-w-4xl rounded-2xl bg-[#FFF4F8] px-6 py-5">
+          <h3 class="font-semibold text-[#FE6593]">How might we…</h3>
+          <p class="mt-2 italic text-[#FE6593] text-base md:text-lg">
+            Turn AI into a warm companion that children want to talk with every day.
+          </p>
+        </div>
+
+        <div class="max-w-4xl space-y-4">
+          <h3 class="text-lg font-medium text-[#FE6593]">Ideation: Tom’s Diary</h3>
+          <p class="leading-relaxed">
+            Every day, Tom the Tomato sends a postcard to the child, sharing an animated moment from his day and asking a question to encourage the child to share theirs. Children reply using voice recordings, photos, or drawings, and Tom responds again through AI.
+          </p>
+        </div>
+
+        <div class="space-y-5">
+          <h3 class="text-lg font-medium text-[#FE6593]">Feature Design</h3>
+          <ul class="list-disc pl-5 space-y-4 leading-relaxed">
+            <li>
+              <strong class="text-[#FE6593]">Daily postcards as conversations:</strong> our mascot
+              Tom sends an animated postcard each day asking an open
+              question. Children reply through voice recordings, photos or
+              drawings and receive a personalised AI response.
+            </li>
+            <li>
+              <strong class="text-[#FE6593]">Friendly, intuitive design:</strong> early user tests
+              showed that too much information distracts children, so I
+              created a diary-style interface where only one page stays
+              active at a time. Familiar icons and large buttons reduce
+              cognitive load and encourage expressive replies.
+            </li>
+            <li>
+              <strong class="text-[#FE6593]">Iterative improvement through data:</strong> after
+              launch, I monitored BigQuery and Google Analytics metrics
+              weekly. Insights led to clearer tutorials, a reduced action
+              zone and optimised AI prompts, resulting in higher completion
+              rates and engagement.
+            </li>
+          </ul>
+          <img src="picturecook_outcome_1.png" alt="PictureCook Tom's Diary AI companion screen" class="w-full h-auto rounded-lg" />
         </div>
       </section>
 
-      <!-- Product Strategy -->
-      <section class="space-y-4">
+      <!-- Feature 2 -->
+      <section class="space-y-8">
         <h2 class="text-xl md:text-2xl font-semibold text-[#AC0033] border-b border-gray-200 pb-2">
-          Product Strategy
+          Feature 2: Tom’s Home – Open-Ended Play
         </h2>
-        <div class="space-y-6">
-          <div class="space-y-2">
-            <h3 class="text-lg font-medium text-[#FE6593]">Tom’s Diary – AI Companion</h3>
-            <ul class="list-disc pl-5 space-y-1">
-              <li>
-                <strong>Daily postcards as conversations:</strong> our mascot
-                Tom sends an animated postcard each day asking an open
-                question. Children reply through voice recordings, photos or
-                drawings and receive a personalised AI response.
-              </li>
-              <li>
-                <strong>Friendly, intuitive design:</strong> early user tests
-                showed that too much information distracts children, so I
-                created a diary‑style interface where only one page stays
-                active at a time. Familiar icons and large buttons reduce
-                cognitive load and encourage expressive replies.
-              </li>
-              <li>
-                <strong>Iterative improvement through data:</strong> after
-                launch, I monitored BigQuery and Google Analytics metrics
-                weekly. Insights led to clearer tutorials, a reduced action
-                zone and optimised AI prompts, resulting in higher completion
-                rates and engagement.
-              </li>
-            </ul>
+        <div class="max-w-4xl space-y-4">
+          <h3 class="text-lg font-medium text-[#FE6593]">Background</h3>
+          <p class="leading-relaxed">
+            While studying children’s games and toys, I noticed something puzzling. Most games have clear goals. Yet dollhouses have no fixed objective. Children simply move characters, rearrange furniture, or reenact daily routines. This made me wonder:
+          </p>
+        </div>
+
+        <div class="max-w-4xl rounded-2xl bg-[#FFF4F8] px-6 py-5">
+          <p class="text-center text-xl md:text-2xl tracking-wide text-[#FE6593]">
+            why do children engage in a play system without explicit tasks?
+          </p>
+        </div>
+
+        <div class="max-w-4xl space-y-5">
+          <h3 class="text-lg font-medium text-[#FE6593]">Ideation: Tom’s Home</h3>
+          <p class="leading-relaxed">
+            After researching developmental psychology, I learned that dollhouses and pretend play help children:
+          </p>
+          <div class="space-y-4">
+            <div class="space-y-1">
+              <h4 class="font-semibold text-[#FE6593]">Construct a worldview</h4>
+              <p class="leading-relaxed">
+                They explore family roles, rules, and relationships through open-ended scenarios.
+              </p>
+            </div>
+            <div class="space-y-1">
+              <h4 class="font-semibold text-[#FE6593]">Develop emotional understanding</h4>
+              <p class="leading-relaxed">
+                Children externalize inner feelings through characters, exploring different emotions in a safe micro-world.
+              </p>
+            </div>
+            <div class="space-y-1">
+              <h4 class="font-semibold text-[#FE6593]">Encourage creativity and decision making</h4>
+              <p class="leading-relaxed">
+                By deciding where each item belongs, and with no right or wrong answer, children gain a sense of control that builds confidence.
+              </p>
+            </div>
           </div>
-          <div class="space-y-2">
-            <h3 class="text-lg font-medium text-[#FE6593]">Tom’s Home – Open‑Ended Play</h3>
-            <ul class="list-disc pl-5 space-y-1">
-              <li>
-                <strong>Real‑time AI chat anywhere:</strong> children can talk
-                with Tom wherever they are in the house, blurring the
-                boundary between play and conversation.
-              </li>
-              <li>
-                <strong>Horizontally scrollable space:</strong> to give kids
-                freedom to arrange furniture without clutter, rooms are
-                shallow and horizontally scrollable. This encourages
-                exploration instead of completing tasks.
-              </li>
-              <li>
-                <strong>Movable objects &amp; furniture:</strong> every item can
-                be dragged, placed and animated. This free‑form interaction
-                invites curiosity and fosters creativity and confidence.
-              </li>
-            </ul>
-            <img src="picturecook_homeflow.png" alt="PictureCook Tom’s Home open-ended play flow" class="w-full h-auto rounded-lg" />
-          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl">
+          <figure class="space-y-2">
+            <img src="picturecook-dollhouse.jpg" alt="Dollhouse play research reference" class="w-full max-w-sm h-auto rounded-lg" />
+            <figcaption class="text-sm text-gray-500">
+              Dollhouse research: open-ended play without fixed objectives.
+            </figcaption>
+          </figure>
+          <figure class="space-y-2">
+            <img src="picturecook-tocaboca.jpg" alt="Toca Boca competitor reference for open-ended play" class="w-full max-w-sm h-auto rounded-lg" />
+            <figcaption class="text-sm text-gray-500">
+              Competitor reference: Toca Boca’s open-ended digital play space.
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="space-y-5">
+          <h3 class="text-lg font-medium text-[#FE6593]">Feature Design</h3>
+          <ul class="list-disc pl-5 space-y-4 leading-relaxed">
+            <li>
+              <strong class="text-[#FE6593]">Real‑time AI chat anywhere:</strong> children can talk
+              with Tom wherever they are in the house, blurring the
+              boundary between play and conversation.
+            </li>
+            <li>
+              <strong class="text-[#FE6593]">Horizontally scrollable space:</strong> to give kids
+              freedom to arrange furniture without clutter, rooms are
+              shallow and horizontally scrollable. This encourages
+              exploration instead of completing tasks.
+            </li>
+            <li>
+              <strong class="text-[#FE6593]">Movable objects &amp; furniture:</strong> every item can
+              be dragged, placed and animated. This free‑form interaction
+              invites curiosity and fosters creativity and confidence.
+            </li>
+          </ul>
+          <img src="picturecook_outcome_2.png" alt="PictureCook Tom's Home open-ended play screen" class="w-full h-auto rounded-lg" />
+          <img src="picturecook_homeflow.png" alt="PictureCook Tom’s Home open-ended play flow" class="w-full h-auto rounded-lg" />
         </div>
       </section>
 
@@ -227,30 +307,48 @@
           Data-Driven Product Iteration
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-          <div class="rounded-lg bg-[#FFF4F8] p-5 space-y-3">
+          <div class="p-5 space-y-3">
             <h3 class="text-lg font-medium text-[#FE6593]">Hypothesis</h3>
             <p class="leading-relaxed">
               Our initial product direction emphasized rich animations and multiple interactive elements on each screen.
             </p>
           </div>
-          <div class="rounded-lg bg-[#FFF4F8] p-5 space-y-3">
+          <div class="p-5 space-y-3">
             <h3 class="text-lg font-medium text-[#FE6593]">Analysis</h3>
             <p class="leading-relaxed">
               To validate user behavior, I defined 32 key behavioral data points and used AI-assisted SQL analysis in BigQuery to identify engagement patterns.
             </p>
           </div>
-          <div class="rounded-lg bg-[#FFF4F8] p-5 space-y-3">
+          <div class="p-5 space-y-3">
             <h3 class="text-lg font-medium text-[#FE6593]">Insights</h3>
             <p class="leading-relaxed">
               The data revealed that children engaged more effectively when each page focused on one clear interaction rather than multiple competing elements.
             </p>
           </div>
-          <div class="rounded-lg bg-[#FFF4F8] p-5 space-y-3">
+          <div class="p-5 space-y-3">
             <h3 class="text-lg font-medium text-[#FE6593]">Impact</h3>
             <p class="leading-relaxed">
               This insight led to a product-wide design shift toward single-action experiences, resulting in <span class="font-semibold text-[#FE6593]">3.5× higher engagement</span>.
             </p>
           </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4 md:gap-6 items-center">
+          <figure class="space-y-2">
+            <img src="picturecook-iteration-before.png" alt="PictureCook interface with multiple interactive points before iteration" class="w-full h-auto rounded-lg" />
+            <figcaption class="text-sm text-gray-500">
+              Before: multiple interactive points competed for children’s attention.
+            </figcaption>
+          </figure>
+          <div class="flex items-center justify-center text-2xl text-[#FE6593]" aria-hidden="true">
+            <span class="hidden md:inline">→</span>
+            <span class="md:hidden">↓</span>
+          </div>
+          <figure class="space-y-2">
+            <img src="picturecook-iteration-after.png" alt="PictureCook interface with a simple single interaction point after iteration" class="w-full h-auto rounded-lg" />
+            <figcaption class="text-sm text-gray-500">
+              After: Increased children’s click-through interactions and improved task completion through intuitive guidance animations.
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -262,7 +360,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
           <div class="space-y-4 leading-relaxed">
             <p>
-              To move faster as a lean product team, I used AI tools to help generate and refine BigQuery SQL queries for behavioral analysis.
+              I used AI tools to help generate and refine BigQuery SQL queries for behavioral analysis.
             </p>
             <p>
               Within 4 weeks, PictureCook reached 3,000+ registered child
@@ -295,14 +393,14 @@
       </section>
 
       <!-- Roadmap & Growth -->
-      <section class="space-y-4">
+      <section class="space-y-6">
         <h2 class="text-xl md:text-2xl font-semibold text-[#AC0033] border-b border-gray-200 pb-2">
           Roadmap &amp; Growth
         </h2>
-        <div class="space-y-4">
+        <div class="space-y-6">
           <div>
             <h3 class="font-medium text-[#FE6593]">Milestone 1 – Market Entry &amp; Early Validation (Q4&nbsp;2025)</h3>
-            <ul class="list-disc pl-5 space-y-1">
+            <ul class="list-disc pl-5 space-y-3 leading-relaxed">
               <li>Raised US$100K in seed funding.</li>
               <li>Launched the first AI feature (Tom’s Diary).</li>
               <li>Subscriptions doubled after launch.</li>
@@ -315,7 +413,7 @@
           </div>
           <div>
             <h3 class="font-medium text-[#FE6593]">Milestone 2 – Expansion &amp; Monetization Strategy (Q1&nbsp;2026)</h3>
-            <ul class="list-disc pl-5 space-y-1">
+            <ul class="list-disc pl-5 space-y-3 leading-relaxed">
               <li>
                 Expanded to the U.S. 🇺🇸 market, shifting the focus from
                 English‑learning to gamified experiences and AI companionship.
@@ -335,7 +433,7 @@
           </div>
           <div>
             <h3 class="font-medium text-[#FE6593]">Product Market Fit &amp; Inclusive Design (Q2&nbsp;2026)</h3>
-            <ul class="list-disc pl-5 space-y-1">
+            <ul class="list-disc pl-5 space-y-3 leading-relaxed">
               <li>
                 Stabilised product‑market fit and revenue in the U.S. 🇺🇸 market.
               </li>
@@ -349,30 +447,27 @@
       </section>
 
       <!-- Impact & Learnings -->
-      <section class="space-y-4 pb-10">
+      <section class="space-y-6 pb-10">
         <h2 class="text-xl md:text-2xl font-semibold text-[#AC0033] border-b border-gray-200 pb-2">
-          Outcomes &amp; Learnings
+          Reflections &amp; Takeaways
         </h2>
         <p class="leading-relaxed">
-          The product’s early performance confirmed that children were not just
-          trying PictureCook once, but building an ongoing relationship with
-          the AI companion. More importantly, the project showed that strong
-          outcomes came from a disciplined product process: starting from real
-          user and business problems, validating assumptions through small
-          pilots, designing for focus and emotional resonance, and iterating
-          continuously with data.
+          This experience taught me that the buyer and the user are not always
+          the same person. For PictureCook, parents were the buyers, while
+          children were the daily users. A successful product therefore had to
+          do both: create an experience children genuinely wanted to play with,
+          and communicate enough educational value, safety, and trust for
+          parents to feel confident paying for it.
         </p>
         <p class="leading-relaxed">
-          Through this work, I learned that emotional engagement and agency can
-          be more powerful than gamification alone in driving retention. I also
-          learned that successful AI products for children require a careful
-          balance of qualitative insight, measurable product signals, and
-          execution choices that remain simple, trustworthy, and scalable.
+          Looking back, one area I would improve is deeper discovery around
+          parents’ concerns toward children using AI at an early age. We
+          initially assumed that the strong need for English learning would
+          outweigh these concerns, but parental hesitation still affected
+          adoption. I learned that even when a product addresses a clear
+          learning need, it is important to uncover the emotional barriers,
+          trust gaps, and purchase motivations behind the buyer’s decision.
         </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start pt-2">
-          <img src="picturecook_outcome_1.png" alt="PictureCook outcome screen 1" class="w-full h-auto rounded-lg" />
-          <img src="picturecook_outcome_2.png" alt="PictureCook outcome screen 2" class="w-full h-auto rounded-lg" />
-        </div>
       </section>
       </main>
     </div>
