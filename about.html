@@ -34,14 +34,60 @@
       .text-xs, .text-sm {
         letter-spacing: -0.01em;
       }
+
+    main {
+      padding: 3.5rem 4rem !important;
+    }
+
+    main > section + section {
+      margin-top: 6.5rem !important;
+    }
+
+    section[class*="space-y-6"] > :not([hidden]) ~ :not([hidden]) {
+      margin-top: 2.25rem !important;
+    }
+
+    section[class*="space-y-8"] > :not([hidden]) ~ :not([hidden]) {
+      margin-top: 3rem !important;
+    }
+
+    h1 {
+      font-size: clamp(3.4rem, 6vw, 5.8rem) !important;
+      line-height: 0.98 !important;
+    }
+
+    h2 {
+      font-size: clamp(2.4rem, 3.6vw, 3.8rem) !important;
+      line-height: 1.05 !important;
+      margin-bottom: 1.75rem !important;
+    }
+
+    h3 {
+      font-size: clamp(1.55rem, 2.1vw, 2.1rem) !important;
+      line-height: 1.16 !important;
+    }
+
+    h4 {
+      font-size: clamp(1.2rem, 1.5vw, 1.45rem) !important;
+      line-height: 1.22 !important;
+    }
+    @media (max-width: 768px) {
+      main {
+        padding: 2rem 1.5rem !important;
+      }
+
+      main > section + section {
+        margin-top: 4rem !important;
+      }
+    }
     </style>
   </head>
   <body class="bg-white text-gray-900">
     <div class="flex min-h-screen">
       <!-- Side Navigation -->
       <nav class="w-48 p-6 flex flex-col space-y-4">
-          <a href="index.html" class="text-sm font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-400">Jess</a>
-          <a href="about.html" class="text-lg font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-400">About</a>
+          <a href="index.html" class="text-lg font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-400">Jess</a>
+          <a href="about.html" class="text-sm font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-400">About</a>
       </nav>
   
       <!-- About content -->
