@@ -4,21 +4,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jess Lu Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
-      font-family: 'Roboto Mono', monospace;
-      
+      font-family: 'Source Sans Pro', Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.58;
+      letter-spacing: -0.01em;
+    }
+
+    h1, h2, h3, h4, nav, footer {
+      font-family: 'Manrope', 'Source Sans Pro', Arial, sans-serif;
+      letter-spacing: -0.04em;
+    }
+
+    h1, h2 {
+      font-weight: 800;
+    }
+
+    h3, h4, strong, .font-bold, .font-semibold, .font-medium {
+      font-weight: 700;
+    }
+
+    p, li, td, th, figcaption {
+      line-height: 1.58;
+    }
+
+    .text-xs, .text-sm {
+      letter-spacing: -0.01em;
     }
   </style>
 </head>
-<body class="bg-white text-gray-900 text-sm md:text-base">
+<body class="bg-white text-gray-900">
   <div class="flex min-h-screen">
     <!-- Side Navigation -->
     <nav class="w-48 p-6 flex flex-col space-y-4">
-      <a href="index.html" class="text-lg font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-400">Jess</a>
-      <a href="about.html" class="text-sm font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-400">About</a>
+      <a href="index.html" class="text-sm font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-400">Jess</a>
+      <a href="about.html" class="text-lg font-semibold text-gray-900 transition-colors duration-200 hover:text-gray-400">About</a>
     </nav>
 
     <!-- Main Content -->
